@@ -1,0 +1,105 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #172033;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 320px;
+  margin: 0;
+  background: #f7fafc;
+}
+
+.popup {
+  padding: 18px;
+}
+
+.eyebrow {
+  margin: 0 0 6px;
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0 0 10px;
+  font-size: 22px;
+}
+
+p {
+  margin: 0 0 16px;
+  color: #4b5563;
+  line-height: 1.4;
+}
+
+.hidden {
+  display: none;
+}
+
+.dashboard {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.classification,
+.stats {
+  border: 1px solid #dbe3ef;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.classification {
+  padding: 12px;
+}
+
+.classification span,
+.stats span {
+  display: block;
+  margin-bottom: 5px;
+  color: #64748b;
+  font-size: 12px;
+}
+
+.classification strong {
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.stats div {
+  padding: 10px;
+  text-align: center;
+}
+
+.stats div + div {
+  border-left: 1px solid #dbe3ef;
+}
+
+.stats strong {
+  font-size: 18px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: 0;
+  border-radius: 6px;
+  background: #2563eb;
+  color: #ffffff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Balance Settings</title>
+  <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+  <main class="onboarding">
+    <section class="panel" aria-labelledby="pageTitle">
+      <p class="eyebrow">Privacy Balance</p>
+      <h1 id="pageTitle">Set up your browsing balance</h1>
+      <p id="pageIntro" class="intro">
+        Answer these once. Your information stays locally in this browser.
+      </p>
+
+      <form id="onboardingForm">
+        <label for="profession">Profession</label>
+        <input
+          id="profession"
+          name="profession"
+          type="text"
+          placeholder="Example: Student"
+          autocomplete="organization-title"
+          required
+        >
+
+        <label for="goal">Goal</label>
+        <input
+          id="goal"
+          name="goal"
+          type="text"
+          placeholder="Example: Prepare for exams"
+          required
+        >
+
+        <label for="interests">Interests</label>
+        <textarea
+          id="interests"
+          name="interests"
+          rows="4"
+          placeholder="Example: coding, design, science, football"
+          required
+        ></textarea>
+
+        <label for="strictnessLevel">Strictness level</label>
+        <select id="strictnessLevel" name="strictnessLevel" required>
+          <option value="relaxed">Relaxed - fewer reminders</option>
+          <option value="balanced" selected>Balanced - normal reminders</option>
+          <option value="strict">Strict - more reminders</option>
+        </select>
+
+        <div class="actions">
+          <button id="saveButton" type="submit">Save and Start</button>
+          <button id="resetButton" class="secondary hidden" type="button">Reset</button>
+        </div>
+      </form>
+
+      <p id="statusMessage" class="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <script src="settings.js"></script>
+</body>
+</html>

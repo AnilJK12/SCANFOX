@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Balance</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="popup">
+    <p class="eyebrow">Privacy Balance</p>
+    <h1 id="popupTitle">Welcome</h1>
+    <p id="popupMessage">Checking setup...</p>
+
+    <section id="dashboard" class="dashboard hidden">
+      <div class="classification">
+        <span>Current page</span>
+        <strong id="classificationValue">Neutral</strong>
+      </div>
+
+      <div class="stats">
+        <div>
+          <span>Productive</span>
+          <strong id="productiveCount">0</strong>
+        </div>
+        <div>
+          <span>Neutral</span>
+          <strong id="neutralCount">0</strong>
+        </div>
+        <div>
+          <span>Distracting</span>
+          <strong id="distractionCount">0</strong>
+        </div>
+      </div>
+    </section>
+
+    <button id="openSettings">Open Setup</button>
+  </main>
+
+  <script src="popup.js"></script>
+</body>
+</html>

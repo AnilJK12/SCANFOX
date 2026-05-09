@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "Privacy Balance",
+  "version": "1.0.0",
+  "description": "A privacy-first extension that balances productive and entertainment browsing with gentle reminders.",
+
+  "action": {
+    "default_title": "Privacy Balance",
+    "default_popup": "popup/popup.html"
+  },
+
+  "background": {
+    "service_worker": "background/background.js"
+  },
+
+  "options_page": "settings/settings.html",
+
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+
+  "host_permissions": [
+    "<all_urls>"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content/content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
